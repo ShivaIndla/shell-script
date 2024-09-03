@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PERSON1=$1
+PERSON1=$1 #sh 02-variable.sh Ramesh Suresh
 PERSON2=$2
 
 echo "$PERSON1 :: hellow $PERSON2, how are you"
