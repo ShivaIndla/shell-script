@@ -5,6 +5,7 @@ USERID=$(id -u)
 VALIDATE(){
     echo "Exit status: $1"
     echo "What are you doing: $2"
+    echo "User is : $3"
 }
 
 if [ $USERID -ne 0 ]
@@ -16,10 +17,10 @@ if [ $USERID -ne 0 ]
 fi    
 
 dnf install mysql -y
-VALIDATE $? "Installing mysql"
+VALIDATE $? "Installing mysql" 
 
 
 dnf install git -y
-VALIDATE $? "Installing mysql"
+VALIDATE $? "Installing git" $USER
 
 echo "is script continuing"
