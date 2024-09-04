@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PERSON1=$Name1 #sh 02-variable.sh Ramesh Suresh
-PERSON2=$Name2
+PERSON1=$1 #sh 02-variable.sh Ramesh Suresh
+PERSON2=$2
 
 echo "$PERSON1 :: hellow $PERSON2, how are you"
 echo "$PERSON2 :: hi $PERSON1 ia m fine, how about you"
