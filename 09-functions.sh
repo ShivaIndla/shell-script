@@ -1,5 +1,7 @@
 #!bin/bash
 
+echo "running $0"
+
 USERID=$(id -u)
 
 VALIDATE(){
@@ -26,5 +28,3 @@ VALIDATE $? "Installing mysql"
 
 dnf install git -y
 VALIDATE $? "Installing git"
-
-echo "is script continuing"
