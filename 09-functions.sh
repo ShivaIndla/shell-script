@@ -6,7 +6,7 @@ VALIDATE(){
     echo "Exit status: $1"
     echo "What are you doing: $2"
     echo "User is : $3"
-    echo "Home Dir is : $4"
+    echo "Home Dir is : "
 }
 
 if [ $USERID -ne 0 ]
