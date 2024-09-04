@@ -2,7 +2,7 @@
 
 NUMBER=$1
 
-if [ $NUMBER -gt 10 ]
+if [ $NUMBER -ne 10 ]  # (-gt, -lt, -eq, -ne, -ge, -le)
 then
     echo "Given $NUMBER is grater than 10"
 else
