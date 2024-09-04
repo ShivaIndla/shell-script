@@ -28,9 +28,11 @@ if [ $USERID -ne 0 ]
         echo "You are SUPER user"
 fi    
 
-dnf install mysql -y &>>$LOGFILE
+dnf install mysql -y
 VALIDATE $? "Installing mysql" 
+&>>$LOGFILE
 
 
-dnf install git -y &>>$LOGFILE
+dnf install git -y
 VALIDATE $? "Installing git"
+&>>$LOGFILE
