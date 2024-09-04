@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUMBER=$1
+NUMBER=$firstnum
 
 if [ $NUMBER -ge 10 ]  # (-gt, -lt, -eq, -ne, -ge, -le)
 then
