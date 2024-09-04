@@ -8,3 +8,4 @@ echo "Home directory of user: $HOME"
 echo "Which user is running this script is: $USER"
 echo "Host name is: $HOSTNAME"
 echo "PID of current script is: $$"
+echo "To check the exit status of preveous command is: $?"  # if the last command is success or not(if 0 means succss, other than 0 means fails)
