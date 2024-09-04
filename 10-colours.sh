@@ -16,10 +16,10 @@ NORMAL="\e[0m"
 VALIDATE(){
     if [ $1 -ne 0 ]
         then
-         echo -e "$2 ....is $RED fail $NORMAL"
+         echo -e "$2 ....is $RED fail $NORMAL" &>>$LOGFILE
          exit 1
         else
-        echo -e "$2 ...is $GREEN success $NORMAL"
+        echo -e "$2 ...is $GREEN success $NORMAL" &>>$LOGFILE
     fi
 }
 
@@ -31,13 +31,13 @@ if [ $USERID -ne 0 ]
         echo "You are SUPER user"
 fi    
 
-dnf install mysql -y &>>$LOGFILE
-VALIDATE $? "Installing mysql" &>>$LOGFILE
+dnf install mysql -y
+VALIDATE $? "Installing mysql"
 
 
 
-dnf install git -y &>>$LOGFILE
-VALIDATE $? "Installing git" &>>$LOGFILE
+dnf install git -y
+VALIDATE $? "Installing git"
 
-dnf install dockerr -y &>>$LOGFILE
-VALIDATE $? "Installing docker" &>>$LOGFILE
+dnf install dockerr -y
+VALIDATE $? "Installing docker"
