@@ -10,7 +10,7 @@ if [ $USERID -ne 0 ]
         echo "You are SUPER user"
 fi    
 
-dnf install mysqll -y
+dnf install mysql -y
 if [ $? -ne 0 ]
     then
         echo "installing of mysql.....is fail"
@@ -20,3 +20,10 @@ if [ $? -ne 0 ]
 fi
 
 dnf git install -y
+if [ $? -ne 0 ]
+    then
+        echo "installing of git.....is fail"
+        exit 1
+    else
+        echo "git is installed"
+fi
