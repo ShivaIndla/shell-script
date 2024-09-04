@@ -27,3 +27,5 @@ if [ $? -ne 0 ]
     else
         echo "git is installed"
 fi
+
+echo "is script continuing"
