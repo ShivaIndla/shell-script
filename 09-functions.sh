@@ -22,6 +22,6 @@ VALIDATE $? "Installing mysql"
 
 
 dnf install git -y
-VALIDATE $? "Installing git" $USER $Home
+VALIDATE $? "Installing git" $USER $HOME
 
 echo "is script continuing"
