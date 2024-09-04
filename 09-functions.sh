@@ -29,10 +29,9 @@ if [ $USERID -ne 0 ]
 fi    
 
 dnf install mysql -y
-VALIDATE $? "Installing mysql" 
-&>>$LOGFILE
+VALIDATE $? "Installing mysql" &>>$LOGFILE
+
 
 
 dnf install git -y
-VALIDATE $? "Installing git"
-&>>$LOGFILE
+VALIDATE $? "Installing git" &>>$LOGFILE
