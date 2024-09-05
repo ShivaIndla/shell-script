@@ -1,8 +1,4 @@
-i=0
-for $i in (($i<=20; $i++))
-do
-echo $i
-done
+#!/bin/bash
 
 for ((i=1; i<=20; i++))
 do 
