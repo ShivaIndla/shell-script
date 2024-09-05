@@ -3,7 +3,7 @@
 USERID=$(id -u)
 RED="\e[31m"
 GREEN="\e[32m"
-Yellow="\e[32m"
+Yellow="\e[33m"
 NORAML="\e[0m"
 
 VALIDATE(){
