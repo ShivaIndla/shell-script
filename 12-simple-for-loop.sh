@@ -1,6 +1,6 @@
 #!/bin/bash
 i=1
-for y in $i++
+for y in $((i++))
 do 
       echo $y
 done
