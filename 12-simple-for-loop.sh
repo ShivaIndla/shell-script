@@ -1,6 +1,6 @@
 #!/bin/bash
 i=1
-for y in ((i<=20; i++))
+for y in (i<=20; i++)
 do 
       echo $y
 done
