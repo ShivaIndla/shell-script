@@ -36,10 +36,10 @@ else
 fi
 
 
-for i in $PACKAGES
+for pkg in $PACKAGES
 do
-    echo -e "Package is about to install: $GREEN $i $NORMAL"
+    echo -e "Package is about to install: $GREEN $pkg $NORMAL"
 
-    dnf list installed $i
-    VALIDATE $? $i
+    dnf list installed $pkg
+    VALIDATE $? $pkg
 done
