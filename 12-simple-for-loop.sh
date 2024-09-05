@@ -1,6 +1,6 @@
 #!/bin/bash
 i=0
-for i in i++
+for i in $i++
 do 
       echo $i
 done
