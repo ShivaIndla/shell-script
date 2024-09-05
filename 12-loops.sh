@@ -10,13 +10,13 @@ VALIDATE(){
 
     if [ $1 -eq 0 ]
     then
-        echo -e " $GREEN $2 $NORAML is allready installed $2 $Yellow ....Skipping $NORMAL"
+        echo -e " $GREEN $2 $NORMAL is allready installed $2 $Yellow ....Skipping $NORMAL"
     else
         echo "installing $2 "
         dnf install $2 -y
         if [ $? -eq 0 ]
         then 
-            echo -e "installing $Yellow $2 $NORAML is $GREEN ....Success $NORMAL"
+            echo -e "installing $Yellow $2 $NORMAL is $GREEN ....Success $NORMAL"
         else
             echo -e "$RED error Please check the command $NORMAL" 
 
@@ -36,7 +36,7 @@ fi
 
 for i in $@
 do
-    echo -e "Package is about to install: $GREEN $i $NORAML"
+    echo -e "Package is about to install: $GREEN $i $NORMAL"
 
     dnf list installed $i
     VALIDATE $? $i
