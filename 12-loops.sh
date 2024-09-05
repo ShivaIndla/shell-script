@@ -18,7 +18,9 @@ VALIDATE(){
         then 
             echo -e "installing $Yellow $2 $NORAML is $GREEN ....Success $NORAML"
         else
-            echo -e "$RED error while executing the command $NORMAL" 
+            echo -e "$RED error Please check the command $NORMAL" 
+
+            echo "==================***=========================="
         fi
     fi
 }
