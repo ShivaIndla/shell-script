@@ -15,7 +15,7 @@ VALIDATE(){
         echo "installing $2 package"
         dnf install $2 -y
     fi
-    exit 1
+    
 }
 
 if [ $USERID -ne 0 ]
