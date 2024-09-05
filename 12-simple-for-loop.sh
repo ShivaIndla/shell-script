@@ -1,8 +1,8 @@
 #!/bin/bash
 i=1
-for i in $(i++)
+for y in $i++
 do 
-      echo $i
+      echo $y
 done
 
 
