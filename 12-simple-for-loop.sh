@@ -1,6 +1,6 @@
 #!/bin/bash
 i=0
-for i in ((i<=20; i++))
+for i in $((i<=20; i++))
 do 
       echo $i
 done
