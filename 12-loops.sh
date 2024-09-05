@@ -1,6 +1,9 @@
 #!/bin/bash
 
 USERID=$(id -u)
+RED="\e[31m"
+GREEN="\e[32m"
+NORAML="\e[0m"
 
 if [ $USERID -ne 0 ]
 then
@@ -12,5 +15,5 @@ fi
 
 for i in $@
 do
-    echo "installing of: $i is done"
+    echo -e "installing of: $GREEN $i $NORAML is done"
 done
