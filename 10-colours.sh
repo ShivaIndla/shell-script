@@ -31,13 +31,13 @@ if [ $USERID -ne 0 ]
         echo "You are SUPER user"
 fi    
 
-dnf install mysql -y
+dnf install mysql -y &>>$LOGFILE
 VALIDATE $? "Installing mysql"
 
 
 
-dnf install git -y
+dnf install git -y &>>$LOGFILE
 VALIDATE $? "Installing git"
 
-dnf install dockerr -y
+dnf install dockerr -y &>>$LOGFILE
 VALIDATE $? "Installing docker"
