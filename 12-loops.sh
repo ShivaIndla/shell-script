@@ -10,7 +10,8 @@ VALIDATE(){
 
     if [ $1 -eq 0 ]
     then
-        echo -e " $GREEN $2 $NORMAL is allready installed $2 $Yellow ....Skipping $NORMAL"
+        echo -e " $GREEN $2  is allready installed  $Yellow ....Skipping $NORMAL"
+        echo "==================***=========================="
     else
         echo "installing $2 "
         dnf install $2 -y
