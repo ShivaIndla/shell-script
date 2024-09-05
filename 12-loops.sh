@@ -1,6 +1,7 @@
 #!/bin/bash
 
 USERID=$(id -u)
+PACKAGES=$@
 RED="\e[31m"
 GREEN="\e[32m"
 Yellow="\e[33m"
@@ -35,7 +36,7 @@ else
 fi
 
 
-for i in $@
+for i in $PACKAGES
 do
     echo -e "Package is about to install: $GREEN $i $NORMAL"
 
