@@ -1,8 +1,8 @@
 #!/bin/bash
-i=1
-for y in (i<=20; i++)
+i=0
+for i in ((i<=20; i++))
 do 
-      echo $y
+      echo $i
 done
 
 
