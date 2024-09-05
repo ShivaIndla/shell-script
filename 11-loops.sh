@@ -1,8 +1,8 @@
 #!/bin/bash
 
+for i in {i..20}
+do
 
+echo "$i"
 
-for(i=0; i++){
-
-
-}
+done
