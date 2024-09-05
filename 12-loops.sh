@@ -14,11 +14,11 @@ VALIDATE(){
     else
         echo "installing $2 "
         dnf install $2 -y
-        if [$? -ne 0]
+        if [ $? -eq 0 ]
         then 
-            echo -e "$RED error while executing the command $NORMAL"
+            echo -e "installing $Yellow $2 $NORAML is $GREEN ....Success $NORAML"
         else
-             echo -e "installing $Yellow $2 $NORAML is $GREEN ....Success $NORAML"
+            echo -e "$RED error while executing the command $NORMAL" 
         fi
     fi
 }
