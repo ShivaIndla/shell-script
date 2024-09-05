@@ -1,4 +1,4 @@
-for i in (i -lt 20) i++
-do
-    echo "$i"
+for ((i=1; i<=20; i=i+1))
+do 
+      echo $i
 done
