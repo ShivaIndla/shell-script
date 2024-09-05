@@ -19,6 +19,7 @@ VALIDATE(){
         if [ $? -eq 0 ]
         then 
             echo -e "Instalation of $Yellow $2 $NORMAL is $GREEN ....Success $NORMAL"
+            echo "==================***=========================="
         else
             echo -e "$RED error Please check the command $NORMAL" 
 
@@ -36,10 +37,10 @@ else
 fi
 
 
-for pkg in $PACKAGES
+for i in $PACKAGES
 do
-    echo -e "Package is about to install: $GREEN $pkg $NORMAL"
+    echo -e "Package is about to install: $GREEN $i $NORMAL"
 
-    dnf list installed $pkg
-    VALIDATE $? $pkg
+    dnf list installed $i
+    VALIDATE $? $i
 done
