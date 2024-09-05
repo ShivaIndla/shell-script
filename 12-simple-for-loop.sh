@@ -1,5 +1,5 @@
 #!/bin/bash
-i=0
+i=1
 for i in $i++
 do 
       echo $i
