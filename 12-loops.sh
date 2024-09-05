@@ -4,19 +4,19 @@ USERID=$(id -u)
 RED="\e[31m"
 GREEN="\e[32m"
 Yellow="\e[33m"
-NORAML="\e[0m"
+NORMAL="\e[0m"
 
 VALIDATE(){
 
     if [ $1 -eq 0 ]
     then
-        echo -e " $GREEN $2 $NORAML is allready installed $2 $Yellow ....Skipping $NORAML"
+        echo -e " $GREEN $2 $NORAML is allready installed $2 $Yellow ....Skipping $NORMAL"
     else
         echo "installing $2 "
         dnf install $2 -y
         if [ $? -eq 0 ]
         then 
-            echo -e "installing $Yellow $2 $NORAML is $GREEN ....Success $NORAML"
+            echo -e "installing $Yellow $2 $NORAML is $GREEN ....Success $NORMAL"
         else
             echo -e "$RED error Please check the command $NORMAL" 
 
