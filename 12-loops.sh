@@ -17,7 +17,7 @@ VALIDATE(){
         dnf install $2 -y
         if [ $? -eq 0 ]
         then 
-            echo -e "installing $Yellow $2 $NORMAL is $GREEN ....Success $NORMAL"
+            echo -e "iInstalation of $Yellow $2 $NORMAL is $GREEN ....Success $NORMAL"
         else
             echo -e "$RED error Please check the command $NORMAL" 
 
