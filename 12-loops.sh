@@ -12,12 +12,14 @@ VALIDATE(){
     then
         echo -e " $GREEN $2 $NORAML is allready installed $2 $Yellow ....Skipping $NORAML"
     else
-
         echo "installing $2 "
         dnf install $2 -y
-        echo -e "installing $Yellow $2 $NORAML is $GREEN ....Success $NORAML"
+        if [$? -ne 0]
+        then 
+            echo -e "$RED error while executing the command $NORMAL"
+        else
+             echo -e "installing $Yellow $2 $NORAML is $GREEN ....Success $NORAML"
     fi
-    
 }
 
 if [ $USERID -ne 0 ]
@@ -27,6 +29,7 @@ then
 else
     echo "You are super user."
 fi
+
 
 for i in $@
 do
